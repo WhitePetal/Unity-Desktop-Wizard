@@ -68,22 +68,26 @@ public class MouseController : MonoBehaviour
         {
             int vkCode = Marshal.ReadInt32(lParam);
             MPlayerInput.Single.MouseClickCallBack();
+            MPlayerInput.Single.MouseLeftClickCallBack();
         }
         if (nCode >= 0 && wParam == (IntPtr)WM_RBUTTONDOWN)
         {
             int vkCode = Marshal.ReadInt32(lParam);
             MPlayerInput.Single.MouseClickCallBack();
+            MPlayerInput.Single.MouseRightClickCallBack();
         }
 
         if (nCode >= 0 && wParam == (IntPtr)WM_LBUTTONUP)
         {
             int vkCode = Marshal.ReadInt32(lParam);
             MPlayerInput.Single.MouseReleaseCallBack();
+            MPlayerInput.Single.MouseLeftRelaseCallBack();
         }
         if (nCode >= 0 && wParam == (IntPtr)WM_RBUTTONUP)
         {
             int vkCode = Marshal.ReadInt32(lParam);
             MPlayerInput.Single.MouseReleaseCallBack();
+            MPlayerInput.Single.MouseRightRelease();
         }
 
         if (nCode >= 0 && wParam == (IntPtr)WM_MOUSEMOVE)

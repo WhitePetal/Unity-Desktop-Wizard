@@ -19,6 +19,10 @@ public class MPlayerInput : MonoBehaviour
     private Action mouseEventCall = () => { };
     private Action mouseClickCall = () => { };
     private Action mouseReleaseCall = () => { };
+    private Action mouseLeftClickCall = () => { };
+    private Action mouseRightClickCall = () => { };
+    private Action mouseLeftReleaseCall = () => { };
+    private Action mouseRightReleaseCall = () => { };
 
     private void Awake()
     {
@@ -62,6 +66,38 @@ public class MPlayerInput : MonoBehaviour
     public void MouseReleaseCallBack()
     {
         mouseReleaseCall.Invoke();
+    }
+    public void RegisterMouseLeftClick(Action c)
+    {
+        mouseLeftClickCall += c;
+    }
+    public void MouseLeftClickCallBack()
+    {
+        mouseLeftClickCall.Invoke();
+    }
+    public void RegisterMouseRightClick(Action c)
+    {
+        mouseRightClickCall += c;
+    }
+    public void MouseRightClickCallBack()
+    {
+        mouseRightClickCall.Invoke();
+    }
+    public void RegisterMouseLeftRelease(Action c)
+    {
+        mouseLeftReleaseCall += c;
+    }
+    public void MouseLeftRelaseCallBack()
+    {
+        mouseLeftReleaseCall.Invoke();
+    }
+    public void RegisterMouseRightRelase(Action c)
+    {
+        mouseRightReleaseCall += c;
+    }
+    public void MouseRightRelease()
+    {
+        mouseRightReleaseCall.Invoke();
     }
 
     public void RegisterKeyDownCallBack(KeyCode key, Action callBack)

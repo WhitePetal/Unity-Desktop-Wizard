@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\KeyBoard.cs" />
     <Compile Include="Assets\Scripts\KeyCodeController.cs" />
     <Compile Include="Assets\Scripts\MPlayerInput.cs" />
+    <Compile Include="Assets\Scripts\Mouse.cs" />
     <Compile Include="Assets\Scripts\MouseController.cs" />
     <Compile Include="Assets\Scripts\WindowSetting.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\AutoBlink.cs" />
@@ -82,6 +83,7 @@
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\UnityChanControlScriptWithRgidBody.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\SplashScreen\Scripts\SplashScreen.cs" />
     <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
+    <None Include="Assets\Art\Shader\Glass.shader" />
     <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
     <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
     <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
@@ -630,8 +632,14 @@
     <Reference Include="Boo.Lang">
       <HintPath>F:/UnityInstall/2019.4.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>F:/Unity/Live3D/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>F:/Unity/Live3D/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+      <HintPath>F:/Unity/Live3D/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>F:/Unity/Live3D/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
@@ -647,6 +655,12 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>F:/Unity/Live3D/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>F:/Unity/Live3D/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+      <HintPath>F:/Unity/Live3D/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>F:/Unity/Live3D/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
